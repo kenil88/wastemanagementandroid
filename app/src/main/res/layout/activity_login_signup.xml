@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/splash_logo" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlMain"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_login"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_18sdp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/textviewStyle"
+                        android:text="@string/welcome" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/textviewBigStyle"
+                        android:text="@string/login" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edUsername"
+                        style="@style/edittextviewNormalStyle"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:background="@drawable/bg_edittext"
+                        android:hint="@string/username" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edPassword"
+                        style="@style/edittextviewPasswordStyle"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/bg_edittext"
+                        android:drawablePadding="@dimen/_40sdp"
+                        android:hint="@string/password"
+                        android:paddingEnd="@dimen/_8sdp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnLogin"
+                        style="@style/btnBigStyle"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/bg_button"
+                        android:text="@string/btn_login" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtForgotPassword"
+                style="@style/textviewPrimarycolor"
+                android:text="@string/forgot_password"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSignUp"
+                style="@style/textviewPrimarycolor"
+                android:text="@string/sign_up"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

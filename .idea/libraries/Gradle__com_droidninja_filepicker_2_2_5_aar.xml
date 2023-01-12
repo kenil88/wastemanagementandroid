@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.droidninja:filepicker:2.2.5@aar">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Java/jdk-17.0.1/caches/transforms-3/71f933d2cae2ef0f77f3a0c54e1f9ceb/transformed/jetified-filepicker-2.2.5/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-17.0.1/caches/transforms-3/71f933d2cae2ef0f77f3a0c54e1f9ceb/transformed/jetified-filepicker-2.2.5/res" />
+      <root url="file://C:/Program Files/Java/jdk-17.0.1/caches/transforms-3/71f933d2cae2ef0f77f3a0c54e1f9ceb/transformed/jetified-filepicker-2.2.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://C:/Program Files/Java/jdk-17.0.1/caches/modules-2/files-2.1/com.droidninja/filepicker/2.2.5/3768ecee7df70b0ee22ed9443c30d28539c9cb06/filepicker-2.2.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://C:/Program Files/Java/jdk-17.0.1/caches/modules-2/files-2.1/com.droidninja/filepicker/2.2.5/83c2662789c5661571091ac9b6806f1d968f658e/filepicker-2.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

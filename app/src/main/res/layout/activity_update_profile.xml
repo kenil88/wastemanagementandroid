@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.acceptor.profile.activity.UpdateProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/txtHeaderText"
+            style="@style/textviewHeaderStyle"
+            android:layout_centerInParent="true"
+            android:text="@string/update_profile"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutHeader"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edFirstname"
+                style="@style/edittextviewNormalStyle"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/first_name"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_15sdp"
+                android:singleLine="true" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edLastname"
+                style="@style/edittextviewNormalStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/last_name"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_15sdp"
+                android:singleLine="true" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edEmail"
+                style="@style/edittextviewNormalStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:enabled="false"
+                android:alpha="0.5"
+                android:editable="false"
+                android:paddingStart="@dimen/_15sdp"
+                android:singleLine="true" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edOrganizationName"
+                style="@style/edittextviewNormalStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/orgnization_name"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_15sdp"
+                android:singleLine="true" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <Spinner
+                    android:id="@+id/spOrganizationCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:paddingStart="@dimen/_5sdp"
+                    tools:listitem="@android:layout/simple_spinner_item" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="end|center"
+                    android:contentDescription="@null"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:src="@mipmap/down_arrow"
+                    app:tint="@color/colorPrimary" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtOrganizationLocation"
+                style="@style/edittextviewNormalStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/organization_location"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_15sdp"
+                android:singleLine="true" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edOrganizationContact"
+                style="@style/edittextviewNormalStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/organization_contact"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_15sdp"
+                android:singleLine="true" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUpdateProfile"
+                style="@style/btnDahboardStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/bg_button"
+                android:text="@string/update"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

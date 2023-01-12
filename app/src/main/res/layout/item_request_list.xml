@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_4sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDonorName"
+            style="@style/textviewPrimarycolor"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_5sdp">
+
+
+            <TextView
+                android:id="@+id/txtDonorContact"
+                style="@style/textviewSmallStyle"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableStart="@drawable/ic_call"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/colorPrimary"
+                android:minWidth="@dimen/_70sdp"
+                android:gravity="center_vertical"
+                android:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/txtDonorEmail"
+                style="@style/textviewSmallStyle"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:text="@string/app_name" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtDonorAddress"
+            style="@style/textviewSmallStyle"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:text="@string/app_name" />
+
+
+        <TextView
+            android:id="@+id/txtDonationDescription"
+            style="@style/textviewSmallStyle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/app_name" />
+
+        <FrameLayout
+            android:id="@+id/layoutAttachments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpagerAttachments"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_marginTop="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/pageCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/pager_count_bg"
+                android:fontFamily="@font/lato_regular"
+                android:maxLength="8"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/txtRequestStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/colorPrimary"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="@font/lato_black"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/request_accepted"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/layoutAcceptOrReject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center_horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/txtAccept"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/bg_button"
+                android:fontFamily="@font/lato_black"
+                android:text="@string/accept"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/txtReject"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:background="@drawable/bg_button_red"
+                android:fontFamily="@font/lato_black"
+                android:text="@string/reject"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/bg_gray"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

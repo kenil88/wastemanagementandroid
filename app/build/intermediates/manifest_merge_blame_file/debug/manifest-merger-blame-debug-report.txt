@@ -1,0 +1,381 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.wastemanagement"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:6:5-79
+11-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:6:22-76
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:7:5-76
+12-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:7:22-73
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:8:5-67
+13-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:8:22-64
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:9:5-80
+14-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:9:22-77
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:10:5-81
+15-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:10:22-78
+16
+17    <uses-feature
+17-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:12:5-14:36
+18        android:name="android.hardware.camera"
+18-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:13:9-47
+19        android:required="false" />
+19-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:14:9-33
+20
+21    <queries>
+21-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:16:5-22:15
+22        <intent>
+22-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:17:9-21:18
+23            <action android:name="android.intent.action.PICK" />
+23-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:18:13-65
+23-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:18:21-62
+24
+25            <data android:mimeType="vnd.android.cursor.dir/image" />
+25-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:20:13-69
+25-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:20:19-66
+26        </intent>
+27        <!-- Needs to be explicitly declared on Android R+ -->
+28        <package android:name="com.google.android.apps.maps" />
+28-->[com.google.android.gms:play-services-maps:18.1.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\9a93d66b67deceb7628f6ebdc9c16596\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+28-->[com.google.android.gms:play-services-maps:18.1.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\9a93d66b67deceb7628f6ebdc9c16596\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+29    </queries>
+30
+31    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+31-->[com.google.android.libraries.places:places:2.7.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\89740d35ba738d1002f529bf253402b4\transformed\jetified-places-2.7.0\AndroidManifest.xml:9:5-81
+31-->[com.google.android.libraries.places:places:2.7.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\89740d35ba738d1002f529bf253402b4\transformed\jetified-places-2.7.0\AndroidManifest.xml:9:22-78
+32    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+32-->[com.google.android.libraries.places:places:2.7.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\89740d35ba738d1002f529bf253402b4\transformed\jetified-places-2.7.0\AndroidManifest.xml:10:5-79
+32-->[com.google.android.libraries.places:places:2.7.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\89740d35ba738d1002f529bf253402b4\transformed\jetified-places-2.7.0\AndroidManifest.xml:10:22-76
+33
+34    <uses-feature
+34-->[com.google.android.gms:play-services-maps:18.1.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\9a93d66b67deceb7628f6ebdc9c16596\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+35        android:glEsVersion="0x00020000"
+35-->[com.google.android.gms:play-services-maps:18.1.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\9a93d66b67deceb7628f6ebdc9c16596\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+36        android:required="true" />
+36-->[com.google.android.gms:play-services-maps:18.1.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\9a93d66b67deceb7628f6ebdc9c16596\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+37
+38    <application
+38-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:24:5-112:19
+39        android:name="com.wastemanagement.WasteManagementApp"
+39-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:25:9-62
+40        android:allowBackup="true"
+40-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:26:9-35
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.8.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\6914ca05fad0efb09e70752787019ed4\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+42        android:debuggable="true"
+43        android:extractNativeLibs="false"
+44        android:fullBackupContent="false"
+44-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:27:9-42
+45        android:icon="@mipmap/app_logo"
+45-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:28:9-40
+46        android:label="@string/app_name"
+46-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:29:9-41
+47        android:roundIcon="@mipmap/app_logo"
+47-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:30:9-45
+48        android:supportsRtl="true"
+48-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:31:9-35
+49        android:theme="@style/Theme.CommonCents"
+49-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:32:9-49
+50        android:usesCleartextTraffic="true" >
+50-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:33:9-44
+51        <activity
+51-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:34:9-42:20
+52            android:name="com.wastemanagement.ui.dashboard.acceptor.activity.AcceptorDrawerActivity"
+52-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:35:13-82
+53            android:exported="false"
+53-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:36:13-37
+54            android:label="@string/title_activity_acceptor_drawer"
+54-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:37:13-67
+55            android:theme="@style/Theme.CommonCents.NoActionBar" >
+55-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:38:13-65
+56            <meta-data
+56-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:39:13-41:36
+57                android:name="android.app.lib_name"
+57-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:40:17-52
+58                android:value="" />
+58-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:41:17-33
+59        </activity>
+60        <activity
+60-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:43:9-46:52
+61            android:name="com.wastemanagement.ui.dashboard.donor.donationrequest.DonationRequestActivity"
+61-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:44:13-87
+62            android:exported="false"
+62-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:45:13-37
+63            android:screenOrientation="portrait" />
+63-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:46:13-49
+64        <activity
+64-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:47:9-50:52
+65            android:name="com.wastemanagement.ui.dashboard.acceptor.activity.AcceptorDashboardActivity"
+65-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:48:13-85
+66            android:exported="false"
+66-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:49:13-37
+67            android:screenOrientation="portrait" />
+67-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:50:13-49
+68        <activity
+68-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:51:9-54:52
+69            android:name="com.wastemanagement.ui.dashboard.acceptor.profile.activity.UpdateProfileActivity"
+69-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:52:13-89
+70            android:exported="false"
+70-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:53:13-37
+71            android:screenOrientation="portrait" />
+71-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:54:13-49
+72        <activity
+72-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:55:9-59:52
+73            android:name="com.wastemanagement.ui.auth.activity.RegisterActivity"
+73-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:56:13-62
+74            android:configChanges="orientation"
+74-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:57:13-48
+75            android:exported="false"
+75-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:58:13-37
+76            android:screenOrientation="portrait" />
+76-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:59:13-49
+77        <activity
+77-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:60:9-64:52
+78            android:name="com.wastemanagement.ui.auth.activity.ForgotPasswordActivity"
+78-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:61:13-68
+79            android:configChanges="orientation"
+79-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:62:13-48
+80            android:exported="false"
+80-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:63:13-37
+81            android:screenOrientation="portrait" />
+81-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:64:13-49
+82        <activity
+82-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:65:9-69:52
+83            android:name="com.wastemanagement.ui.dashboard.donor.organization.activity.OrganizationsActivity"
+83-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:66:13-91
+84            android:configChanges="orientation"
+84-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:67:13-48
+85            android:exported="false"
+85-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:68:13-37
+86            android:screenOrientation="portrait" />
+86-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:69:13-49
+87        <activity
+87-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:70:9-74:52
+88            android:name="com.wastemanagement.ui.dashboard.donor.category.activity.DonationCategoryActivity"
+88-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:71:13-90
+89            android:configChanges="orientation"
+89-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:72:13-48
+90            android:exported="false"
+90-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:73:13-37
+91            android:screenOrientation="portrait" />
+91-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:74:13-49
+92        <activity
+92-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:75:9-79:52
+93            android:name="com.wastemanagement.ui.dashboard.SelectUserActivity"
+93-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:76:13-79
+94            android:configChanges="orientation"
+94-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:77:13-48
+95            android:exported="true"
+95-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:78:13-36
+96            android:screenOrientation="portrait" />
+96-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:79:13-49
+97        <activity
+97-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:80:9-84:52
+98            android:name="com.wastemanagement.ui.auth.activity.LoginSignupActivity"
+98-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:81:13-65
+99            android:configChanges="orientation"
+99-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:82:13-48
+100            android:exported="true"
+100-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:83:13-36
+101            android:screenOrientation="portrait" />
+101-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:84:13-49
+102        <activity
+102-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:85:9-95:20
+103            android:name="com.wastemanagement.ui.auth.activity.SplashActivity"
+103-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:86:13-60
+104            android:configChanges="orientation"
+104-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:87:13-48
+105            android:exported="true"
+105-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:88:13-36
+106            android:screenOrientation="portrait" >
+106-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:89:13-49
+107            <intent-filter>
+107-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:90:13-94:29
+108                <action android:name="android.intent.action.MAIN" />
+108-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:91:17-69
+108-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:91:25-66
+109
+110                <category android:name="android.intent.category.LAUNCHER" />
+110-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:93:17-77
+110-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:93:27-74
+111            </intent-filter>
+112        </activity>
+113
+114        <provider
+115            android:name="androidx.core.content.FileProvider"
+115-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:98:13-62
+116            android:authorities="com.wastemanagement.provider"
+116-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:99:13-60
+117            android:exported="false"
+117-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:100:13-37
+118            android:grantUriPermissions="true" >
+118-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:101:13-47
+119            <meta-data
+119-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:103:13-106:52
+120                android:name="android.support.FILE_PROVIDER_PATHS"
+120-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:104:17-67
+121                android:resource="@xml/file_provider_paths" />
+121-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:105:17-60
+122        </provider>
+123
+124        <meta-data
+124-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:109:9-111:55
+125            android:name="com.google.android.geo.API_KEY"
+125-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:110:13-58
+126            android:value="@string/google_maps_key" />
+126-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:111:13-52
+127
+128        <activity
+128-->[gun0912.ted:tedpermission:2.2.3] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\904fe21f205318dc7f74cce0fe3ac41e\transformed\jetified-tedpermission-2.2.3\AndroidManifest.xml:10:9-14:67
+129            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+129-->[gun0912.ted:tedpermission:2.2.3] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\904fe21f205318dc7f74cce0fe3ac41e\transformed\jetified-tedpermission-2.2.3\AndroidManifest.xml:11:13-75
+130            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+130-->[gun0912.ted:tedpermission:2.2.3] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\904fe21f205318dc7f74cce0fe3ac41e\transformed\jetified-tedpermission-2.2.3\AndroidManifest.xml:12:13-144
+131            android:screenOrientation="unspecified"
+131-->[gun0912.ted:tedpermission:2.2.3] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\904fe21f205318dc7f74cce0fe3ac41e\transformed\jetified-tedpermission-2.2.3\AndroidManifest.xml:13:13-52
+132            android:theme="@style/Theme.Transparent.Permission" />
+132-->[gun0912.ted:tedpermission:2.2.3] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\904fe21f205318dc7f74cce0fe3ac41e\transformed\jetified-tedpermission-2.2.3\AndroidManifest.xml:14:13-64
+133        <activity
+133-->[com.google.android.libraries.places:places:2.7.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\89740d35ba738d1002f529bf253402b4\transformed\jetified-places-2.7.0\AndroidManifest.xml:15:9-21:20
+134            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+134-->[com.google.android.libraries.places:places:2.7.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\89740d35ba738d1002f529bf253402b4\transformed\jetified-places-2.7.0\AndroidManifest.xml:16:13-91
+135            android:exported="false"
+135-->[com.google.android.libraries.places:places:2.7.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\89740d35ba738d1002f529bf253402b4\transformed\jetified-places-2.7.0\AndroidManifest.xml:17:13-37
+136            android:label="@string/places_autocomplete_label"
+136-->[com.google.android.libraries.places:places:2.7.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\89740d35ba738d1002f529bf253402b4\transformed\jetified-places-2.7.0\AndroidManifest.xml:18:13-62
+137            android:theme="@style/PlacesAutocompleteOverlay"
+137-->[com.google.android.libraries.places:places:2.7.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\89740d35ba738d1002f529bf253402b4\transformed\jetified-places-2.7.0\AndroidManifest.xml:19:13-61
+138            android:windowSoftInputMode="adjustResize" >
+138-->[com.google.android.libraries.places:places:2.7.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\89740d35ba738d1002f529bf253402b4\transformed\jetified-places-2.7.0\AndroidManifest.xml:20:13-55
+139        </activity> <!-- Needs to be explicitly declared on P+ -->
+140        <uses-library
+140-->[com.google.android.gms:play-services-maps:18.1.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\9a93d66b67deceb7628f6ebdc9c16596\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+141            android:name="org.apache.http.legacy"
+141-->[com.google.android.gms:play-services-maps:18.1.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\9a93d66b67deceb7628f6ebdc9c16596\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+142            android:required="false" />
+142-->[com.google.android.gms:play-services-maps:18.1.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\9a93d66b67deceb7628f6ebdc9c16596\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+143
+144        <activity
+144-->[com.google.android.gms:play-services-base:18.0.1] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\c7185ec6f6dbb0c5f2e629f3caaa5b61\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+145            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+145-->[com.google.android.gms:play-services-base:18.0.1] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\c7185ec6f6dbb0c5f2e629f3caaa5b61\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+146            android:exported="false"
+146-->[com.google.android.gms:play-services-base:18.0.1] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\c7185ec6f6dbb0c5f2e629f3caaa5b61\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+147            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+147-->[com.google.android.gms:play-services-base:18.0.1] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\c7185ec6f6dbb0c5f2e629f3caaa5b61\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+148
+149        <meta-data
+149-->[com.google.android.gms:play-services-basement:18.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\c265de3fa3a672d5883f4269b74b8141\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+150            android:name="com.google.android.gms.version"
+150-->[com.google.android.gms:play-services-basement:18.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\c265de3fa3a672d5883f4269b74b8141\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+151            android:value="@integer/google_play_services_version" />
+151-->[com.google.android.gms:play-services-basement:18.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\c265de3fa3a672d5883f4269b74b8141\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+152
+153        <uses-library
+153-->[androidx.window:window:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\40eebe30fa06f472d46cc9811e32e97c\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+154            android:name="androidx.window.extensions"
+154-->[androidx.window:window:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\40eebe30fa06f472d46cc9811e32e97c\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+155            android:required="false" />
+155-->[androidx.window:window:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\40eebe30fa06f472d46cc9811e32e97c\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+156        <uses-library
+156-->[androidx.window:window:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\40eebe30fa06f472d46cc9811e32e97c\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+157            android:name="androidx.window.sidecar"
+157-->[androidx.window:window:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\40eebe30fa06f472d46cc9811e32e97c\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+158            android:required="false" />
+158-->[androidx.window:window:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\40eebe30fa06f472d46cc9811e32e97c\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+159
+160        <activity
+160-->[com.droidninja:filepicker:2.2.5] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\71f933d2cae2ef0f77f3a0c54e1f9ceb\transformed\jetified-filepicker-2.2.5\AndroidManifest.xml:17:9-19:62
+161            android:name="droidninja.filepicker.FilePickerActivity"
+161-->[com.droidninja:filepicker:2.2.5] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\71f933d2cae2ef0f77f3a0c54e1f9ceb\transformed\jetified-filepicker-2.2.5\AndroidManifest.xml:18:13-68
+162            android:configChanges="orientation|screenSize" />
+162-->[com.droidninja:filepicker:2.2.5] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\71f933d2cae2ef0f77f3a0c54e1f9ceb\transformed\jetified-filepicker-2.2.5\AndroidManifest.xml:19:13-59
+163        <activity
+163-->[com.droidninja:filepicker:2.2.5] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\71f933d2cae2ef0f77f3a0c54e1f9ceb\transformed\jetified-filepicker-2.2.5\AndroidManifest.xml:20:9-22:62
+164            android:name="droidninja.filepicker.MediaDetailsActivity"
+164-->[com.droidninja:filepicker:2.2.5] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\71f933d2cae2ef0f77f3a0c54e1f9ceb\transformed\jetified-filepicker-2.2.5\AndroidManifest.xml:21:13-70
+165            android:configChanges="orientation|screenSize" />
+165-->[com.droidninja:filepicker:2.2.5] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\71f933d2cae2ef0f77f3a0c54e1f9ceb\transformed\jetified-filepicker-2.2.5\AndroidManifest.xml:22:13-59
+166
+167        <provider
+167-->[com.droidninja:filepicker:2.2.5] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\71f933d2cae2ef0f77f3a0c54e1f9ceb\transformed\jetified-filepicker-2.2.5\AndroidManifest.xml:24:9-32:20
+168            android:name="droidninja.filepicker.utils.FilePickerProvider"
+168-->[com.droidninja:filepicker:2.2.5] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\71f933d2cae2ef0f77f3a0c54e1f9ceb\transformed\jetified-filepicker-2.2.5\AndroidManifest.xml:25:13-74
+169            android:authorities="com.wastemanagement.droidninja.filepicker.provider"
+169-->[com.droidninja:filepicker:2.2.5] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\71f933d2cae2ef0f77f3a0c54e1f9ceb\transformed\jetified-filepicker-2.2.5\AndroidManifest.xml:26:13-82
+170            android:exported="false"
+170-->[com.droidninja:filepicker:2.2.5] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\71f933d2cae2ef0f77f3a0c54e1f9ceb\transformed\jetified-filepicker-2.2.5\AndroidManifest.xml:27:13-37
+171            android:grantUriPermissions="true" >
+171-->[com.droidninja:filepicker:2.2.5] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\71f933d2cae2ef0f77f3a0c54e1f9ceb\transformed\jetified-filepicker-2.2.5\AndroidManifest.xml:28:13-47
+172            <meta-data
+172-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:103:13-106:52
+173                android:name="android.support.FILE_PROVIDER_PATHS"
+173-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:104:17-67
+174                android:resource="@xml/provider_paths" />
+174-->D:\Projects\Hiten\WasteManagement\SourceCode\WasteManagement\app\src\main\AndroidManifest.xml:105:17-60
+175        </provider>
+176        <provider
+176-->[androidx.emoji2:emoji2:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\eb4329335b34b335868eb857ab6e3589\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+177            android:name="androidx.startup.InitializationProvider"
+177-->[androidx.emoji2:emoji2:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\eb4329335b34b335868eb857ab6e3589\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+178            android:authorities="com.wastemanagement.androidx-startup"
+178-->[androidx.emoji2:emoji2:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\eb4329335b34b335868eb857ab6e3589\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+179            android:exported="false" >
+179-->[androidx.emoji2:emoji2:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\eb4329335b34b335868eb857ab6e3589\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+180            <meta-data
+180-->[androidx.emoji2:emoji2:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\eb4329335b34b335868eb857ab6e3589\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+181                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+181-->[androidx.emoji2:emoji2:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\eb4329335b34b335868eb857ab6e3589\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+182                android:value="androidx.startup" />
+182-->[androidx.emoji2:emoji2:1.0.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\eb4329335b34b335868eb857ab6e3589\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+183            <meta-data
+183-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\b7a43d90e9597b17d2a3652e111c0045\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+184                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+184-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\b7a43d90e9597b17d2a3652e111c0045\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+185                android:value="androidx.startup" />
+185-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\b7a43d90e9597b17d2a3652e111c0045\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+186        </provider>
+187
+188        <service
+188-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\10b4c0ed2daa9ed1ee0a6a910ef49ccc\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
+189            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+189-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\10b4c0ed2daa9ed1ee0a6a910ef49ccc\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
+190            android:exported="false" >
+190-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\10b4c0ed2daa9ed1ee0a6a910ef49ccc\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
+191            <meta-data
+191-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\10b4c0ed2daa9ed1ee0a6a910ef49ccc\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
+192                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+192-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\10b4c0ed2daa9ed1ee0a6a910ef49ccc\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
+193                android:value="cct" />
+193-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\10b4c0ed2daa9ed1ee0a6a910ef49ccc\transformed\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
+194        </service>
+195        <service
+195-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\1c01020bc8b50fdf20b258b457a9d21d\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
+196            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+196-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\1c01020bc8b50fdf20b258b457a9d21d\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
+197            android:exported="false"
+197-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\1c01020bc8b50fdf20b258b457a9d21d\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
+198            android:permission="android.permission.BIND_JOB_SERVICE" >
+198-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\1c01020bc8b50fdf20b258b457a9d21d\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
+199        </service>
+200
+201        <receiver
+201-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\1c01020bc8b50fdf20b258b457a9d21d\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
+202            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+202-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\1c01020bc8b50fdf20b258b457a9d21d\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
+203            android:exported="false" />
+203-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Program Files\Java\jdk-17.0.1\caches\transforms-3\1c01020bc8b50fdf20b258b457a9d21d\transformed\jetified-transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
+204    </application>
+205
+206</manifest>

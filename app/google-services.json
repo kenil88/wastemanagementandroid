@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "83449831556",
+    "project_id": "csf-cariszone-app",
+    "storage_bucket": "csf-cariszone-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83449831556:android:16558a1a5c64ccd378a2d1",
+        "android_client_info": {
+          "package_name": "com.commoncents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83449831556-evoqqmtaqb0qcal1cbvtsp8c3t5uj2uv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoDG8UsfCQMl_OtALSCR5xBcBAs4NlDqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83449831556-evoqqmtaqb0qcal1cbvtsp8c3t5uj2uv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

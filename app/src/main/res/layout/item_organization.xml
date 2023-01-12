@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutItemOrganization"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/layoutDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_toStartOf="@+id/btnRequest"
+        android:paddingEnd="@dimen/_3sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtOrganiationName"
+            style="@style/textviewPrimarycolor"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/txtOrganiationLocality"
+            style="@style/textviewSmallStyle"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_location"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/txtOrganiationContact"
+            style="@style/textviewSmallStyle"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_call"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/app_name" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:textColor="@color/white"
+        android:text="@string/request"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:textAllCaps="false"/>
+
+    <View
+        android:layout_below="@+id/layoutDetail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/devider"
+       />
+</RelativeLayout>
